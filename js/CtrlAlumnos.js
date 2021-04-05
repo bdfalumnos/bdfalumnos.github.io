@@ -70,7 +70,7 @@ function htmlFila(doc) {
   const nombre = cod(data.nombre);
   var fsf= cod(data.fecha);
   var fecha = new Date(fsf);
-  var dformat = [fecha.getDate(), fecha.getMonth()+1, fecha.getFullYear()].join('/');
+  var dformat = [fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join('/');
   const parámetros =
     new URLSearchParams();
   parámetros.append("id", doc.id);
