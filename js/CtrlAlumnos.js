@@ -70,6 +70,7 @@ function htmlFila(doc) {
   const nombre = cod(data.nombre);
   var fsf= cod(data.fecha);
   var fecha = new Date(fsf);
+  var espacio="      ";
   var dformat = [fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join('/');
   const parámetros =
     new URLSearchParams();
@@ -79,7 +80,7 @@ function htmlFila(doc) {
       <a class="fila" href=
   "alumno.html?${parámetros}">
         <strong class="primario">
-          ${nombre}  ${dformat}
+          ${nombre} ${espacio} ${dformat}
         </strong>
       </a>
      
