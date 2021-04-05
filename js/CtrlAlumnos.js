@@ -68,7 +68,7 @@ function htmlFila(doc) {
   const data = doc.data();
   const matricula = cod(data.matricula);
   const nombre = cod(data.nombre);
-  const fecha= cod(data.fecha);
+  var fecha= cod(data.fecha);
   var d = fecha.toDate();
   var dformat = [d.getDate(), d.getMonth()+1, d.getFullYear()].join('/');
   const parámetros =
