@@ -69,8 +69,8 @@ function htmlFila(doc) {
   const matricula = cod(data.matricula);
   const nombre = cod(data.nombre);
   const fecha= cod(data.fecha);
-  var d = fecha.toDate(),
-  dformat = [d.getDate(), d.getMonth()+1, d.getFullYear()].join('/');
+  var d = fecha.toDate();
+  var dformat = [d.getDate(), d.getMonth()+1, d.getFullYear()].join('/');
   const parámetros =
     new URLSearchParams();
   parámetros.append("id", doc.id);
